@@ -1,19 +1,17 @@
-import { Button, Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { Link, Stack, useLocalSearchParams, useRouter } from 'expo-router';
+import { Link, useLocalSearchParams, useNavigation, useRootNavigationState, useRouter } from 'expo-router';
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano } from "./planos";
 
-//TODO usar mais Views
+//TODO usar mais Views - Melhorar apresentação dessa tela
 //TODO substituir buttons por touchables ou Pressables [recomendado] - melhor ainda: faça seu proprio button
 //TODO usar estilos para reduzir a complexidade dos styles fixos
 
 export default function DetalharScreen() {
   //const router = useRouter();
+  const navegacao = useNavigation();
   const params = useLocalSearchParams();
-   // const navigation = useNavigation();
     const mes = params.mes;
-   // console.log(mes);
     const dia = params.dia;
-  //  console.log(dia);
     const getChave = () => {
       return mes+"_"+dia;
     }
@@ -26,8 +24,7 @@ export default function DetalharScreen() {
           <Text style={{textAlign: 'center'}}>Livro Espirito Profecia: {getNomeLivro( getSiglaESPlano( getChave() ))}</Text> 
           <Text style={{textAlign: 'center'}}>Titulo Capitulo Espirito Profecia: {getTituloCapituloESPlano( getChave() )}</Text> 
           <Pressable style={styles.botaoverde} onPress={() => {}} ><Text style={styles.fontebotao}>Realizou a Leitura do espírito de profecia</Text></Pressable>
-          <Link href='/home' style={styles.botaoazulforte} onPress={() => {}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Link>
-         
+          <Pressable style={styles.botaoazulforte} onPress={() => {navegacao.goBack()}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Pressable>
         </View>
       );
 }

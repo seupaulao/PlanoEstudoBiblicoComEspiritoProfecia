@@ -1,4 +1,4 @@
-import { Button, ScrollView, Text, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 
 import MesCabecalho from "./cabecalho";
 import React from "react";
