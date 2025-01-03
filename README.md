@@ -41,18 +41,10 @@ To learn more about developing your project with Expo, look at the following res
 
 # Pendencias
 
-1. fazer navegacao : ao clicar no botão do dia de estudo abrir uma nova tela
-com as informações de leitura do dia
 
-2. nova tela com 2 botoes de confirmação
-  - um para o texto da biblia
-  - um para o texto do espirito de profecia
-  - na tela nova deve haver um botão de retornar também
-
-  caso um botao da tela seja clicado, o campo vai mudar para o Texto "Lido!" e ficar com background verde
+2. nova tela 'Detalhar 'com 2 botoes de confirmação e 1 de retorno para Home
  
-
- - ao clicar num botao um valor correspondente ao botao pressionado vai para o localstorage
+ Regra de negócio por exemplo
  Ex : ao clicar no botao
 
  Se o dia que estou lendo é 25/JANEIRO
@@ -89,3 +81,5 @@ if (getItem("JAN_25") != null e getItem("JAN_25").length > 1) entao botao muda a
 else botao muda a cor para amarelo, indicando ao leitor que ainda existem pendencias de leitura
 
 4. melhorar a visualização - UX
+
+5. resolver os TODOs

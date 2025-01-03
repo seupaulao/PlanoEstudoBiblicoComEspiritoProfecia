@@ -1,24 +1,65 @@
-import { Button, Text, View } from "react-native";
+import { Button, Pressable, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Link, Stack, useLocalSearchParams, useRouter } from 'expo-router';
 import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano } from "./planos";
 
-import { useNavigation } from "expo-router";
+//TODO usar mais Views
+//TODO substituir buttons por touchables ou Pressables [recomendado] - melhor ainda: faça seu proprio button
+//TODO usar estilos para reduzir a complexidade dos styles fixos
 
-export default function DetalharScreen(props: { route: { params: { mes: string; dia: string; }; }; }) {
-    const navigation = useNavigation();
-    const { mes, dia } = props.route.params;
+export default function DetalharScreen() {
+  //const router = useRouter();
+  const params = useLocalSearchParams();
+   // const navigation = useNavigation();
+    const mes = params.mes;
+   // console.log(mes);
+    const dia = params.dia;
+  //  console.log(dia);
+    const getChave = () => {
+      return mes+"_"+dia;
+    }
     return (
-        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'space-around', marginTop: 8 }}>
-          <Text>Details Screen</Text>
-          <Text>MES: {JSON.stringify(mes.substring(0,3))}</Text>
-          <Text>Dia: {dia}</Text>
-          <Text>Chave: {mes.substring(0,3)+"_"+dia}</Text>
-          <Text>Texto Biblico: {getCapitulosBibliaPlano( mes.substring(0,3)+"_"+dia )}</Text>
-          <Button title="Realizou Leitura Biblia" onPress={() => {}} /> 
-          <Text>Capitulos Espirito Profecia: {getCapitulosESPlano( mes.substring(0,3)+"_"+dia )}</Text> 
-          <Text>Livro Espirito Profecia: {getNomeLivro( getSiglaESPlano( mes.substring(0,3)+"_"+dia ))}</Text> 
-          <Text>Titulo Capitulo Espirito Profecia: {getTituloCapituloESPlano( mes.substring(0,3)+"_"+dia )}</Text> 
-          <Button title="Realizou Leitura do Espírito de Profecia" onPress={() => {}} />
-          <Button title=">Go to Home" onPress={() => navigation.goBack()} />
+        <View style={{ flex: 1 }}>
+           <Text style={{textAlign: 'center'}}>Dia de estudo: {dia}/{mes}</Text>
+          <Text style={{textAlign: 'center'}}>Texto Biblico: {getCapitulosBibliaPlano( getChave() )}</Text>
+          <Pressable style={styles.botaoazul} onPress={() => {}} ><Text style={styles.fontebotao}>Realizou o Estudo da Bíblia</Text></Pressable> 
+          <Text style={{textAlign: 'center'}}>Capitulos Espirito Profecia: {getCapitulosESPlano( getChave() )}</Text> 
+          <Text style={{textAlign: 'center'}}>Livro Espirito Profecia: {getNomeLivro( getSiglaESPlano( getChave() ))}</Text> 
+          <Text style={{textAlign: 'center'}}>Titulo Capitulo Espirito Profecia: {getTituloCapituloESPlano( getChave() )}</Text> 
+          <Pressable style={styles.botaoverde} onPress={() => {}} ><Text style={styles.fontebotao}>Realizou a Leitura do espírito de profecia</Text></Pressable>
+          <Link href='/home' style={styles.botaoazulforte} onPress={() => {}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Link>
+         
         </View>
       );
 }
+
+
+const styles = StyleSheet.create({
+  fontebotao: {
+      fontSize: 16,
+      textAlign: 'center'
+  },
+  fontebotaobranco: {
+    fontSize: 16,
+    textAlign: 'center',
+    color: "white"
+},
+  botaoazul: {
+    backgroundColor: '#0000cc35',
+    color: '#ffffff',
+    padding: 15
+  },
+  botaoazulforte: {
+    backgroundColor: '#0000cccc',
+    color: '#ffffff',
+    padding: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center'
+  },
+  botaoverde: {
+    backgroundColor: '#00bb0035',
+    color: '#ffffff',
+    padding: 15
+  }
+
+});

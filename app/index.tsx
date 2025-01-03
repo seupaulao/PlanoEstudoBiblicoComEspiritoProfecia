@@ -1,19 +1,34 @@
 import * as React from 'react';
 
-import DetalharScreen from './detalhar';
+import { StyleSheet, Text, View } from 'react-native';
+
 import HomeScreen from './home';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { Link } from 'expo-router';
 
-const Pilha = createNativeStackNavigator();
+// import DetalharScreen from './detalhar';
+// import HomeScreen from './home';
 
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+
+//const Pilha = createNativeStackNavigator();
+
+//TODO corrigir a navegação e a passagem de parametros via typescript para o tipo que nao dê erro
 export default function Index() {
    return (
  
-      <Pilha.Navigator initialRouteName='Home'>
-        <Pilha.Screen name="Home" component={HomeScreen} />
-        <Pilha.Screen name="Detalhar" component={DetalharScreen} />     
-      </Pilha.Navigator>
+       <HomeScreen />
   
    );
- 
 }
+
+const estilo = StyleSheet.create({
+   button: {
+      width: 100, 
+      height: 25, 
+      backgroundColor: '#0000dd55', 
+      textAlign: 'center', 
+      alignItems: 'center', 
+      fontSize: 16
+   }
+})
