@@ -1,11 +1,16 @@
 import React, { PropsWithChildren } from "react";
-import {Text, View} from "react-native";
+import {Text, TouchableOpacity, View} from "react-native";
+
+import { useNavigation } from "expo-router";
+
+//import { getCapitulosBibliaPlano, getNomeLivro } from "./planos";
 
 type MesCabecalhoProps = PropsWithChildren<{
   texto: string;
   mes: any[];
 }>;
 export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
+  const navigation = useNavigation();
    return(
     <>
         <Text style={{textAlign: "center"}}>{texto}</Text>
@@ -16,7 +21,9 @@ export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
           marginTop: 15,
         }}>
           {mes.map(valor => 
-            <View style={{width: 50, 
+            <TouchableOpacity 
+            onPress={() => navigation.navigate("Detalhar", {mes: texto, dia: valor.dia})}
+            style={{width: 50, 
             height: 50, backgroundColor: "red", 
             marginTop: 8, alignContent: "center", 
             alignItems: "center", 
@@ -24,7 +31,7 @@ export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
               <Text style={{fontSize: 16, textAlign: "center"}}>
                 {valor.dia}
                 </Text>
-            </View>  )}
+            </TouchableOpacity>  )}
         </View>
    
          

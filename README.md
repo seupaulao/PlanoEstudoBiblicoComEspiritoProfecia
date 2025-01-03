@@ -10,6 +10,18 @@
 npx create-expo-app@latest NOMEPROJETO
 ```
 
+# Criar o projeto escolhendo se deseja typescript ou javascript
+
+```shell
+npx create-expo-app@latest --template
+```
+
+# instalar rotas e navegação
+
+```shell
+npx expo install react-native-screens react-native-safe-area-contex
+```
+
 ## Get a fresh project
 
 When you're ready, run:
@@ -75,3 +87,5 @@ Se o dia vai testar o estado do localstorage do dia
 if (getItem("JAN_25") == null) entao botao continua vermelho, indicando que nada foi lido
 if (getItem("JAN_25") != null e getItem("JAN_25").length > 1) entao botao muda a cor pra verde
 else botao muda a cor para amarelo, indicando ao leitor que ainda existem pendencias de leitura
+
+4. melhorar a visualização - UX
