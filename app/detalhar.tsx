@@ -1,8 +1,9 @@
-import { Link, useLocalSearchParams, useNavigation, useRootNavigationState, useRouter } from 'expo-router';
-import { Pressable, StyleSheet, Text, View, } from "react-native";
-import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano } from "./planos";
+import { Button, Pressable, StyleSheet, Text, View, } from "react-native";
+import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano, gravarValor, recuperarValor } from "./planos";
+import { useEffect, useState } from 'react';
+import { useLocalSearchParams, useNavigation } from 'expo-router';
 
-import { useState } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //TODO usar mais Views - Melhorar apresentação dessa tela
 //TODO substituir buttons por touchables ou Pressables [recomendado] - melhor ainda: faça seu proprio button
@@ -12,13 +13,63 @@ export default function DetalharScreen() {
   //const router = useRouter();
   const [leuBiblia, setLeuBiblia] = useState(0);
   const [leuEP, setLeuEP] = useState(0);
+  //const [valorStr, setValorStr] = useState("");
   const navegacao = useNavigation();
   const params = useLocalSearchParams();
-    const mes = params.mes;
-    const dia = params.dia;
-    const getChave = () => {
+  const mes = params.mes;
+  const dia = params.dia;
+  const getChave = () => {
       return mes+"_"+dia;
+  }
+  useEffect(()=>getBanco(),[]);
+
+  const getBanco = () => {
+    const dado = recuperarValor( getChave() )
+    dado.then(x => {
+    //  setValorStr(x);
+      console.log(getChave(), x);
+      if (x.indexOf('b') >= 0) 
+      {
+        setLeuBiblia(1);
+      }
+      if (x.indexOf('x') >= 0) 
+      {
+          setLeuEP(1);
+      }
+    });
+   // AsyncStorage.removeItem(getChave());
+  // console.log("Valor recuperado do banco via state:", valorStr); //funcionou
+
+  }
+
+  const gravarLeituraBiblia = () => {
+      if (leuBiblia == 0) {
+        setLeuBiblia(1);
+        const dado = recuperarValor( getChave() );
+        dado.then(x => {
+           if (x.length <= 0) {
+              gravarValor( getChave(), "b" );
+           } else {
+              gravarValor(getChave(), x + ";b")
+           } 
+        });  
+      }
+   }
+
+  const gravarLeituraEP = () => {
+    if (leuEP == 0) {
+      setLeuEP(1);
+      const dado = recuperarValor( getChave() );
+        dado.then(x => {
+           if (x.length <= 0) {
+              gravarValor( getChave(), "x" );
+           } else {
+              gravarValor(getChave(), x + ";x")
+           } 
+      });  
     }
+}
+
     return (
         <View style={{ margin: 10, flexWrap: 'wrap', alignContent: 'center', }}>
           <View style={styles.blocoLeitura}>
@@ -26,14 +77,15 @@ export default function DetalharScreen() {
               <Text style={styles.fontDescricao}>Dia de estudo: {dia}/{mes}</Text>
               <Text style={styles.fontDescricao}>Texto Biblico: {getCapitulosBibliaPlano( getChave() )}</Text>
           </View>
-          <Pressable style={leuBiblia == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => {setLeuBiblia(1);}} ><Text style={styles.fontebotao}>{leuBiblia == 0 ? "Realizou o Estudo da Bíblia": "Lido!"}</Text></Pressable> 
+          <Pressable style={leuBiblia == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => { gravarLeituraBiblia() }} ><Text style={styles.fontebotao}>{leuBiblia == 0 ? "Realizou o Estudo da Bíblia": "Lido!"}</Text></Pressable> 
           <View style={styles.blocoLeitura}>
               <Text style={styles.fontDescricaoTitulo}>Espirito de Profecia </Text>
               <Text style={styles.fontDescricao}>Capitulo: {getCapitulosESPlano( getChave() )}</Text> 
               <Text style={styles.fontDescricao}>Livro: {getNomeLivro( getSiglaESPlano( getChave() ))}</Text> 
               <Text style={styles.fontDescricao}>Titulo: {getTituloCapituloESPlano( getChave() )}</Text> 
           </View>
-          <Pressable style={leuEP == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => {setLeuEP(1);}} ><Text style={styles.fontebotao}>{leuEP == 0 ? "Realizou a Leitura do Espírito de Profecia": "Lido!"}</Text></Pressable>
+          <Button title="Testar" onPress={()=>getBanco()}></Button>
+          <Pressable style={leuEP == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => { gravarLeituraEP() }} ><Text style={styles.fontebotao}>{leuEP == 0 ? "Realizou a Leitura do Espírito de Profecia": "Lido!"}</Text></Pressable>
           <Pressable style={styles.botaoazulforte} onPress={() => {navegacao.goBack()}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Pressable>
         </View>
       );

@@ -1,3 +1,5 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 const livrosstring = '{"PP": "Patriarcas e Profetas","PR": "Profetas e Reis", "AA": "Atos dos Apóstolos", "DTD": "O Desejado de Todas as Nações", "PJ": "Parábolas de Jesus","GC": "O Grande Conflito"}';
 
 const planosstring = '{' +
@@ -389,3 +391,19 @@ export function getNomeLivro(chave: string): string {
     let planos = Object.assign({}, JSON.parse(livrosstring));
     return planos[chave];
 }
+
+  export async function gravarValor(chave: string, valor: string) {
+      try {
+        await AsyncStorage.setItem(chave, valor);
+      }  catch (e) {  }
+  }
+
+  export async function recuperarValor (chave: string): Promise<string> {
+    try {
+      const valor = await AsyncStorage.getItem(chave);
+      if (valor == null) return "";
+      return valor;
+    }  catch (e) {
+      return ""; 
+    }
+  }
