@@ -1,6 +1,7 @@
 import React, { PropsWithChildren, useEffect, useState } from "react";
 import {StyleSheet, Text, View} from "react-native";
 
+import Item from "./item";
 import { Link } from "expo-router";
 import { recuperarValor } from "./planos";
 
@@ -11,19 +12,19 @@ type MesCabecalhoProps = PropsWithChildren<{
 
 export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
  
-  const [estilos, setEstilos] = useState([]);
-  const [ch, setCh] = useState([]);
+  const [meuEstilo, setMeuEstilo] = useState(estilo.caixa);
+  //const [ch, setCh] = useState([]);
   const getChave = (mes: string, dia: string) => {
     return mes+"_"+dia;
   }
 
   useEffect(() => {
-    zerar()
+    recuperarEstilo("JAN_9");
   }, []);
 
   const zerar = () => {
-    setCh([]);
-    setEstilos([]);
+   // setCh([]);
+   // setEstilos([]);
     console.log('foi chamado??')
   }
 
@@ -33,44 +34,27 @@ export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
     //TODO problema eh que o valor armazenado eh assincrono e vem de uma promessa, e esse valor
     //nao chega em tempo de execucao na variavel
     const valor = recuperarValor(chave);
-    let estilocurr: any ;
+   // let estilocurr: any ;
     valor.then( (x) => {
       if ( x.length <= 0) {
-        estilocurr = estilo.caixa;
+        setMeuEstilo(estilo.caixa);
       } else {
         if (x.length < 2) {
-          estilocurr = estilo.caixaamarela;
+          setMeuEstilo(estilo.caixaamarela);
         } else {
-          estilocurr = estilo.caixaverde;
+          setMeuEstilo(estilo.caixaverde);
         }
       }
-      estilos.push(estilocurr);
-      ch.push(chave);
     });
-    //console.log("Tambem Fez isso:", estilos.length, estilos);
-  
-    console.log(chave, estilos, ch); 
 
-    //const vv = ch.findIndex(x => x == chave);
-
-    //console.log(vv, estilos[vv]);
-
-    return estilo.caixa;
+    return meuEstilo;
   }
 
    return(
     <>
         <Text style={{textAlign: "center"}}>{texto}</Text>
         <View style={estilo.container}>
-          {mes.map((valor, index) => 
-            <Link 
-            key={getChave(texto.substring(0,3), valor.dia)}
-            href={{pathname: '/detalhar', params: {mes: texto.substring(0,3), dia: valor.dia}}}
-            style={ recuperarEstilo(getChave(texto.substring(0,3), valor.dia)) }>
-              <Text style={estilo.fonteDia}>
-                { valor.dia.toString().length > 1 ? valor.dia : "0"+valor.dia.toString()}
-                </Text>
-            </Link>  )}
+          {mes.map((valor, index) => <Item  dia={valor.dia} mes={texto.substring(0,3)} key={index}/>   )}
         </View>
     </>
    );
