@@ -1,15 +1,34 @@
 import {StyleSheet, Text} from "react-native";
+import {useEffect, useState} from "react";
 
 import { Link } from "expo-router";
-import {useState} from "react";
+import { recuperarValor } from "./planos";
 
 export default function Item(props: any) {
     const [meuEstilo, setMeuEstilo] = useState(estilo.caixa); 
-    const getChave = (mes: string, dia: string) => {
-        return mes+"_"+dia;
-      }
+    const [cont, setCont] = useState(0);
+
+    function verificarBancoCor(): void {
+         console.log('Item.tsx -- useeffect');
+         var dado = recuperarValor( props.mes + "_" + props.dia);
+         dado.then((z)=>{
+            if (z.length <= 0) {
+              setMeuEstilo(estilo.caixa);
+            } else {
+              if (z.length > 1) {
+                 setMeuEstilo(estilo.caixaverde);
+              } else {
+                setMeuEstilo(estilo.caixaamarela);
+              }
+            }
+         });
+    }
+
+    useEffect(()=>verificarBancoCor());
+
     return (
     <Link 
+                onPress={()=>setCont(cont + 1)}
                 href={{pathname: '/detalhar', params: {mes: props.mes, dia: props.dia}}}
                 style={ meuEstilo }>
                   <Text style={estilo.fonteDia}>
@@ -53,3 +72,5 @@ const estilo = StyleSheet.create({
     textAlign: "center"
   }
 });
+
+

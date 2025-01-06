@@ -1,23 +1,29 @@
-import { Button, Pressable, StyleSheet, Text, View, } from "react-native";
+import { Pressable, StyleSheet, Text, View, } from "react-native";
 import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano, gravarValor, recuperarValor } from "./planos";
 import { useEffect, useState } from 'react';
-import { useLocalSearchParams, useNavigation } from 'expo-router';
 
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useLocalSearchParams } from 'expo-router';
+import {
+  useNavigation,
+} from '@react-navigation/native';
+
+//import AsyncStorage from '@react-native-async-storage/async-storage';
 
 //TODO usar mais Views - Melhorar apresentação dessa tela
 //TODO substituir buttons por touchables ou Pressables [recomendado] - melhor ainda: faça seu proprio button
 //TODO usar estilos para reduzir a complexidade dos styles fixos
 
 export default function DetalharScreen() {
-  //const router = useRouter();
+
   const [leuBiblia, setLeuBiblia] = useState(0);
   const [leuEP, setLeuEP] = useState(0);
-  //const [valorStr, setValorStr] = useState("");
+
   const navegacao = useNavigation();
   const params = useLocalSearchParams();
+  
   const mes = params.mes;
   const dia = params.dia;
+
   const getChave = () => {
       return mes+"_"+dia;
   }
@@ -26,7 +32,6 @@ export default function DetalharScreen() {
   const getBanco = () => {
     const dado = recuperarValor( getChave() )
     dado.then(x => {
-    //  setValorStr(x);
       console.log(getChave(), x);
       if (x.indexOf('b') >= 0) 
       {
@@ -37,8 +42,7 @@ export default function DetalharScreen() {
           setLeuEP(1);
       }
     });
-   // AsyncStorage.removeItem(getChave());
-  // console.log("Valor recuperado do banco via state:", valorStr); //funcionou
+
 
   }
 
@@ -50,7 +54,7 @@ export default function DetalharScreen() {
            if (x.length <= 0) {
               gravarValor( getChave(), "b" );
            } else {
-              gravarValor(getChave(), x + ";b")
+              gravarValor(getChave(), x + "b")
            } 
         });  
       }
@@ -64,7 +68,7 @@ export default function DetalharScreen() {
            if (x.length <= 0) {
               gravarValor( getChave(), "x" );
            } else {
-              gravarValor(getChave(), x + ";x")
+              gravarValor(getChave(), x + "x")
            } 
       });  
     }
@@ -84,7 +88,6 @@ export default function DetalharScreen() {
               <Text style={styles.fontDescricao}>Livro: {getNomeLivro( getSiglaESPlano( getChave() ))}</Text> 
               <Text style={styles.fontDescricao}>Titulo: {getTituloCapituloESPlano( getChave() )}</Text> 
           </View>
-          <Button title="Testar" onPress={()=>getBanco()}></Button>
           <Pressable style={leuEP == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => { gravarLeituraEP() }} ><Text style={styles.fontebotao}>{leuEP == 0 ? "Realizou a Leitura do Espírito de Profecia": "Lido!"}</Text></Pressable>
           <Pressable style={styles.botaoazulforte} onPress={() => {navegacao.goBack()}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Pressable>
         </View>

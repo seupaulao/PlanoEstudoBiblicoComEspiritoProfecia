@@ -407,3 +407,7 @@ export function getNomeLivro(chave: string): string {
       return ""; 
     }
   }
+
+export function apagar(chave: string) {
+  AsyncStorage.removeItem(chave);
+}
