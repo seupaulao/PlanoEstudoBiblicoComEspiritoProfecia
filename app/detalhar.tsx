@@ -76,7 +76,7 @@ const voltar = () => {
 }
 
     return (
-        <View style={{ margin: 10, flexWrap: 'wrap', alignContent: 'center', }}>
+        <View style={ styles.container }>
           <View style={styles.blocoLeitura}>
               <Text style={styles.fontDescricaoTitulo}>Bíblia </Text>
               <Text style={styles.fontDescricao}>Dia de estudo: {dia}/{mes}</Text>
@@ -97,6 +97,9 @@ const voltar = () => {
 
 
 const styles = StyleSheet.create({
+  container: {
+    margin: 10, flexWrap: 'wrap', alignContent: 'center', flexDirection: 'row', justifyContent: 'center'
+  },
   fontDescricaoTitulo: {
     textAlign: 'center' , fontSize: 24, marginBlockEnd: 20
   },
@@ -118,8 +121,10 @@ const styles = StyleSheet.create({
   botaoazul: {
     backgroundColor: '#0000cc35',
     color: '#ffffff',
-    padding: 15,
-    marginTop: 50
+    height: 40,
+    width: 300,
+    marginTop: 30,
+    justifyContent: 'center'
     
   },
   botaoazulforte: {

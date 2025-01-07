@@ -4,7 +4,8 @@ export default function RootLayout() {
   return ( 
   <Stack
      screenOptions={{
-      headerLeft: ()=>null
+      headerLeft: ()=>null,
+      headerBackVisible: false
      }}
   >
     <Stack.Screen name="index" />
