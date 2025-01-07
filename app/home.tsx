@@ -1,9 +1,11 @@
-import { ScrollView, Text, View } from "react-native";
+import { Pressable, ScrollView, Text, View } from "react-native";
+import React, { useState } from "react";
 
 import MesCabecalho from "./cabecalho";
-import React from "react";
+import { limparBase } from "./planos";
 
 export default function HomeScreen () {
+     const [contador, setContador] = useState(0);
      const janeiro = [{dia: 1},{dia: 2},{dia: 3},{dia: 4},{dia: 5},{dia: 6},{dia: 7},{dia: 8},{dia: 9},{dia: 10},{dia: 11},{dia: 12},{dia: 13},{dia: 14},{dia: 15},{dia: 16},{dia: 17},{dia: 18},{dia: 19},{dia: 20},{dia: 21},{dia: 22},{dia: 23},{dia: 24},{dia: 25},{dia: 26},{dia: 27},{dia: 28},{dia: 29},{dia: 30},{dia: 31}];
         const fevereiro = [{dia: 1},{dia: 2},{dia: 3},{dia: 4},{dia: 5},{dia: 6},{dia: 7},{dia: 8},{dia: 9},{dia: 10},{dia: 11},{dia: 12},{dia: 13},{dia: 14},{dia: 15},{dia: 16},{dia: 17},{dia: 18},{dia: 19},{dia: 20},{dia: 21},{dia: 22},{dia: 23},{dia: 24},{dia: 25},{dia: 26},{dia: 27},{dia: 28}];
         const marco = [{dia: 1},{dia: 2},{dia: 3},{dia: 4},{dia: 5},{dia: 6},{dia: 7},{dia: 8},{dia: 9},{dia: 10},{dia: 11},{dia: 12},{dia: 13},{dia: 14},{dia: 15},{dia: 16},{dia: 17},{dia: 18},{dia: 19},{dia: 20},{dia: 21},{dia: 22},{dia: 23},{dia: 24},{dia: 25},{dia: 26},{dia: 27},{dia: 28},{dia: 29},{dia: 30},{dia: 31}];
@@ -17,8 +19,16 @@ export default function HomeScreen () {
         const novembro = [{dia: 1},{dia: 2},{dia: 3},{dia: 4},{dia: 5},{dia: 6},{dia: 7},{dia: 8},{dia: 9},{dia: 10},{dia: 11},{dia: 12},{dia: 13},{dia: 14},{dia: 15},{dia: 16},{dia: 17},{dia: 18},{dia: 19},{dia: 20},{dia: 21},{dia: 22},{dia: 23},{dia: 24},{dia: 25},{dia: 26},{dia: 27},{dia: 28},{dia: 29},{dia: 30}];
         const dezembro = [{dia: 1},{dia: 2},{dia: 3},{dia: 4},{dia: 5},{dia: 6},{dia: 7},{dia: 8},{dia: 9},{dia: 10},{dia: 11},{dia: 12},{dia: 13},{dia: 14},{dia: 15},{dia: 16},{dia: 17},{dia: 18},{dia: 19},{dia: 20},{dia: 21},{dia: 22},{dia: 23},{dia: 24},{dia: 25},{dia: 26},{dia: 27},{dia: 28},{dia: 29},{dia: 30},{dia: 31}];
 
+        const reloadPage = () => {
+          setContador(contador + 1);
+          limparBase();
+
+        }
         return (
             <>
+                    
+            <Pressable style={{backgroundColor: "orange", margin: 10}} onPress={()=>reloadPage()}>Apagar Base</Pressable>
+                    
             <View>
             <Text style={{textAlign: 'center', fontSize: 24}}>Plano de Estudo Bíblico</Text>
             <Text style={{textAlign: 'center', fontSize: 24}}>Com Espírito de Profecia</Text>

@@ -6,10 +6,9 @@ import { recuperarValor } from "./planos";
 
 export default function Item(props: any) {
     const [meuEstilo, setMeuEstilo] = useState(estilo.caixa); 
-    const [cont, setCont] = useState(0);
+
 
     function verificarBancoCor(): void {
-         console.log('Item.tsx -- useeffect');
          var dado = recuperarValor( props.mes + "_" + props.dia);
          dado.then((z)=>{
             if (z.length <= 0) {
@@ -24,11 +23,23 @@ export default function Item(props: any) {
          });
     }
 
-    useEffect(()=>verificarBancoCor());
+  useEffect(()=>fazerEfeito());
+
+  const fazerEfeito = () => {
+
+      verificarBancoCor();
+  }
+
+  function enviarESomar(): void {
+
+       verificarBancoCor();
+          
+  }
 
     return (
     <Link 
-                onPress={()=>setCont(cont + 1)}
+                
+                onPress={()=>enviarESomar()}
                 href={{pathname: '/detalhar', params: {mes: props.mes, dia: props.dia}}}
                 style={ meuEstilo }>
                   <Text style={estilo.fonteDia}>

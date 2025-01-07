@@ -1,24 +1,22 @@
+import { Link, useLocalSearchParams } from 'expo-router';
 import { Pressable, StyleSheet, Text, View, } from "react-native";
 import { getCapitulosBibliaPlano, getCapitulosESPlano, getNomeLivro, getSiglaESPlano, getTituloCapituloESPlano, gravarValor, recuperarValor } from "./planos";
 import { useEffect, useState } from 'react';
 
-import { useLocalSearchParams } from 'expo-router';
-import {
-  useNavigation,
-} from '@react-navigation/native';
+import { router } from 'expo-router';
+
+// import {
+//   useNavigation,
+// } from '@react-navigation/native';
 
 //import AsyncStorage from '@react-native-async-storage/async-storage';
-
-//TODO usar mais Views - Melhorar apresentação dessa tela
-//TODO substituir buttons por touchables ou Pressables [recomendado] - melhor ainda: faça seu proprio button
-//TODO usar estilos para reduzir a complexidade dos styles fixos
 
 export default function DetalharScreen() {
 
   const [leuBiblia, setLeuBiblia] = useState(0);
   const [leuEP, setLeuEP] = useState(0);
 
-  const navegacao = useNavigation();
+  // const navegacao = useNavigation();
   const params = useLocalSearchParams();
   
   const mes = params.mes;
@@ -32,7 +30,6 @@ export default function DetalharScreen() {
   const getBanco = () => {
     const dado = recuperarValor( getChave() )
     dado.then(x => {
-      console.log(getChave(), x);
       if (x.indexOf('b') >= 0) 
       {
         setLeuBiblia(1);
@@ -74,6 +71,10 @@ export default function DetalharScreen() {
     }
 }
 
+const voltar = () => {
+    router.replace('/home');
+}
+
     return (
         <View style={{ margin: 10, flexWrap: 'wrap', alignContent: 'center', }}>
           <View style={styles.blocoLeitura}>
@@ -89,7 +90,7 @@ export default function DetalharScreen() {
               <Text style={styles.fontDescricao}>Titulo: {getTituloCapituloESPlano( getChave() )}</Text> 
           </View>
           <Pressable style={leuEP == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => { gravarLeituraEP() }} ><Text style={styles.fontebotao}>{leuEP == 0 ? "Realizou a Leitura do Espírito de Profecia": "Lido!"}</Text></Pressable>
-          <Pressable style={styles.botaoazulforte} onPress={() => {navegacao.goBack()}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Pressable>
+          <Pressable style={styles.botaoazulforte} onPress={() => {voltar()}} ><Text style={styles.fontebotaobranco}>Voltar Topo</Text></Pressable>
         </View>
       );
 }

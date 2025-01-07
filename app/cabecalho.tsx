@@ -1,7 +1,8 @@
+import {Button, Pressable, StyleSheet, Text, View} from "react-native";
 import React, { PropsWithChildren, useEffect } from "react";
-import {StyleSheet, Text, View} from "react-native";
 
 import Item from "./item";
+import { limparBase } from "./planos";
 
 type MesCabecalhoProps = PropsWithChildren<{
   texto: string;
@@ -10,14 +11,9 @@ type MesCabecalhoProps = PropsWithChildren<{
 
 export default function MesCabecalho({texto, mes}: MesCabecalhoProps) {
  
-// useEffect(()=>{verificar()});
-
-// function verificar() {
-//   console.log('Rerender cabecalho.tsx');
-// }
-
    return(
     <>
+
         <Text style={{textAlign: "center"}}>{texto}</Text>
         <View style={estilo.container}>
           {mes.map((valor, index) => <Item  dia={valor.dia} mes={texto.substring(0,3)} key={index}/>   )}

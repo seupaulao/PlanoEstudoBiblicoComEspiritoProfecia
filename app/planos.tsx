@@ -411,3 +411,13 @@ export function getNomeLivro(chave: string): string {
 export function apagar(chave: string) {
   AsyncStorage.removeItem(chave);
 }
+
+export function limparBase() {
+  const keys = AsyncStorage.getAllKeys();
+  keys.then(
+    (chaves) => {
+      chaves.forEach(x => apagar(x));
+    }
+  );
+
+}

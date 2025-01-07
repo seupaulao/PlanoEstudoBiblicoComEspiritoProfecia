@@ -41,45 +41,6 @@ To learn more about developing your project with Expo, look at the following res
 
 # Pendencias
 
-
-2. nova tela 'Detalhar 'com 2 botoes de confirmação e 1 de retorno para Home
- 
- Regra de negócio por exemplo
- Ex : ao clicar no botao
-
- Se o dia que estou lendo é 25/JANEIRO
- E cliquei  no botao "Leitura Efetivada?" da Seção de leitura da Bíblia
- O localStorage vai fazer o seguinte:
-
- if (getItem("JAN_25") == null) {
-    setItem("JAN_25", "b")  -- indicando que a biblia foi lida
- } 
- else{
-    let anterior = getItem("JAN_25"); 
-    setItem("JAN_25", anterior + ";b")
- }
-
- o botao "Leitura Efetivada?" fica verde com o texto "Lido!" desabilitado
-
- Se clicar no botão "Leitura Efetivada?" da Seção leitura do Espírito de Profecia
- O localStorage vai fazer o seguinte:
-
- if (getItem("JAN_25") == null) {
-    setItem("JAN_25", "b")  -- indicando que a biblia foi lida
- } 
- else{
-    let anterior = getItem("JAN_25"); 
-    setItem("JAN_25", anterior + ";b")
- }
-
-
-3. Na volta pra tela inicial
-Se o dia vai testar o estado do localstorage do dia
-
-if (getItem("JAN_25") == null) entao botao continua vermelho, indicando que nada foi lido
-if (getItem("JAN_25") != null e getItem("JAN_25").length > 1) entao botao muda a cor pra verde
-else botao muda a cor para amarelo, indicando ao leitor que ainda existem pendencias de leitura
-
-4. melhorar a visualização - UX
-
-5. resolver os TODOs
+1. Em _layout
+   - tentar queimar todos as screens empurradas pra pilha
+   - esconder o backbutton
