@@ -27,12 +27,10 @@ export default function HomeScreen () {
         return (
             <>
                     
-            <Pressable style={{backgroundColor: "orange", margin: 10}} onPress={()=>reloadPage()}>Apagar Base</Pressable>
+
                     
-            <View>
-            <Text style={{textAlign: 'center', fontSize: 24}}>Plano de Estudo Bíblico</Text>
-            <Text style={{textAlign: 'center', fontSize: 24}}>Com Espírito de Profecia</Text>
-           
+            <View style={{marginBlockEnd: 20, marginBlockStart: 20}}>
+            <Text style={{textAlign: 'center', fontSize: 18}}>Clique no dia para realizar o estudo</Text>
             </View>
             <ScrollView>
               <View style={{ padding: 15 }}>
@@ -72,6 +70,9 @@ export default function HomeScreen () {
                 <MesCabecalho texto="DEZEMBRO" mes={dezembro} />
               </View>
             </ScrollView>
+            <Pressable style={{backgroundColor: "orange", margin: 20, padding: 10}} onPress={()=>reloadPage()}>
+                <Text style={{textAlign: 'center'}}>Apagar Base</Text>
+            </Pressable>
             </>
           );
 }

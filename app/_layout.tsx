@@ -4,12 +4,16 @@ export default function RootLayout() {
   return ( 
   <Stack
      screenOptions={{
-      headerBackButtonMenuEnabled: false
+      headerLeft: ()=>null
      }}
   >
-    <Stack.Screen name="index"/>
-    <Stack.Screen name="home" />
-    <Stack.Screen name="detalhar" />
+    <Stack.Screen name="index" />
+    <Stack.Screen name="home" options={{
+      title: 'Plano de Estudo Bíblico'
+    }}/>
+    <Stack.Screen name="detalhar"  options={{
+      title: 'Leituras do Dia' 
+    }}/>
   </Stack>
   );
 }
