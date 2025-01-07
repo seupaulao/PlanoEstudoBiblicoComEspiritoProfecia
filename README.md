@@ -43,7 +43,7 @@ To learn more about developing your project with Expo, look at the following res
 
 1. Em _layout
    - tentar queimar todos as screens empurradas pra pilha
-   - esconder o backbutton
+ok   - esconder o backbutton
 
 # build
 
