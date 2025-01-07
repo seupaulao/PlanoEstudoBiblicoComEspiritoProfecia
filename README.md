@@ -44,3 +44,47 @@ To learn more about developing your project with Expo, look at the following res
 1. Em _layout
    - tentar queimar todos as screens empurradas pra pilha
    - esconder o backbutton
+
+# build
+
+## login
+eas login
+
+## descobrir quem está logado
+eas whoami
+
+## configurar o projeto
+eas build:configure
+
+## build plataforma android
+eas build --platform android
+
+## build ios e android
+eas build --platform all
+
+## build para android devices e emuladores
+
+para gerar um apk modifique o `eas.json`
+
+* developmentClient to true (default)
+* distribution to internal
+* android.buildType to apk
+* android.gradleCommand to :app:assembleRelease, :app:assembleDebug or any other gradle command that produces .apk
+
+```shell
+eas build -p android --profile preview
+```
+
+## rodando a ultima build no emulador
+
+```shell
+eas build:run -p android --latest
+```
+
+## rodando no dispositivo
+
+2 formas:
+
+- ou aguarda o `eas build` copia o apk para o dispotivo e instala
+
+- ou usa o [adb](https://developer.android.com/studio/command-line/adb)
