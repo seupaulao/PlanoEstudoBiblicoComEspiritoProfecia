@@ -53,46 +53,46 @@ const planosstring = '{' +
     '"FEV_17": {"CAPBIBLIA":"Deuteronômio 14 a 17", "SIGLAES":"**", "CAPES":"****", "NOMES":"****"},' +
     '"FEV_18": {"CAPBIBLIA":"Deuteronômio 18 a 29", "SIGLAES":"**", "CAPES":"****", "NOMES":"****"},' +
     '"FEV_19": {"CAPBIBLIA":"Deuteronômio 30 a 34", "SIGLAES":"PP", "CAPES":"Cap. 43", "NOMES":"A Morte de Moisés"},' +
-    '"FEV_20": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 19", "NOMES":"Prefacio"},' +
-    '"FEV_21": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 20", "NOMES":"Prefacio"},' +
-    '"FEV_22": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 21", "NOMES":"Prefacio"},' +
-    '"FEV_23": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 22", "NOMES":"Prefacio"},' +
-    '"FEV_24": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 23", "NOMES":"Prefacio"},' +
-    '"FEV_25": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 24", "NOMES":"Prefacio"},' +
-    '"FEV_26": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 25", "NOMES":"Prefacio"},' +
-    '"FEV_27": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 26", "NOMES":"Prefacio"},' +
-    '"FEV_28": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 27", "NOMES":"Prefacio"},' +
-    '"MAR_1": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"", "NOMES":"Prefacio"},' +
-    '"MAR_2": {"CAPBIBLIA":"Salmos 3 a 6 e Genesis 1", "SIGLAES":"PP", "CAPES":"Cap. 01", "NOMES":"A Criação"},' +
-    '"MAR_3": {"CAPBIBLIA":"Salmos 7 a 8  e Genesis 2", "SIGLAES":"PP", "CAPES":"Cap. 02", "NOMES":"Outro"},' +
-    '"MAR_4": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 03", "NOMES":"Prefacio"},' +
-    '"MAR_5": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 04", "NOMES":"Prefacio"},' +
-    '"MAR_6": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 05", "NOMES":"Prefacio"},' +
-    '"MAR_7": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 06", "NOMES":"Prefacio"},' +
-    '"MAR_8": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 07", "NOMES":"Prefacio"},' +
-    '"MAR_9": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 08", "NOMES":"Prefacio"},' +
-    '"MAR_10": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 09", "NOMES":"Prefacio"},' +
-    '"MAR_11": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 10", "NOMES":"Prefacio"},' +
-    '"MAR_12": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 11", "NOMES":"Prefacio"},' +
-    '"MAR_13": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 12", "NOMES":"Prefacio"},' +
-    '"MAR_14": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 13", "NOMES":"Prefacio"},' +
-    '"MAR_15": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 14", "NOMES":"Prefacio"},' +
-    '"MAR_16": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 15", "NOMES":"Prefacio"},' +
-    '"MAR_17": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 16", "NOMES":"Prefacio"},' +
-    '"MAR_18": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 17", "NOMES":"Prefacio"},' +
-    '"MAR_19": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 18", "NOMES":"Prefacio"},' +
-    '"MAR_20": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 19", "NOMES":"Prefacio"},' +
-    '"MAR_21": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 20", "NOMES":"Prefacio"},' +
-    '"MAR_22": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 21", "NOMES":"Prefacio"},' +
-    '"MAR_23": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 22", "NOMES":"Prefacio"},' +
-    '"MAR_24": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 23", "NOMES":"Prefacio"},' +
-    '"MAR_25": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 24", "NOMES":"Prefacio"},' +
-    '"MAR_26": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 25", "NOMES":"Prefacio"},' +
-    '"MAR_27": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 26", "NOMES":"Prefacio"},' +
-    '"MAR_28": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 27", "NOMES":"Prefacio"},' +
-    '"MAR_29": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 28", "NOMES":"Prefacio"},' +
-    '"MAR_30": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 29", "NOMES":"Prefacio"},' +
-    '"MAR_31": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 30", "NOMES":"Prefacio"},' +
+    '"FEV_20": {"CAPBIBLIA":"Josué 1 a 4", "SIGLAES":"PP", "CAPES":"Cap. 44", "NOMES":"A Travessia do Jordão"},' +
+    '"FEV_21": {"CAPBIBLIA":"Josué 5 a 7", "SIGLAES":"PP", "CAPES":"Cap. 45", "NOMES":"A Queda de Jericó"},' +
+    '"FEV_22": {"CAPBIBLIA":"Josué 8 a 11", "SIGLAES":"PP", "CAPES":"Cap. 46", "NOMES":"As bênçãos e as maldições"},' +
+    '"FEV_23": {"CAPBIBLIA":"Josué 12 a 17", "SIGLAES":"PP", "CAPES":"Cap. 47", "NOMES":"Aliança com os Gebeonitas"},' +
+    '"FEV_24": {"CAPBIBLIA":"Josué 18 a 21", "SIGLAES":"PP", "CAPES":"Cap. 48", "NOMES":"A divisão de Canaã"},' +
+    '"FEV_25": {"CAPBIBLIA":"Josué 22 a 24", "SIGLAES":"PP", "CAPES":"Cap. 49", "NOMES":"Prefacio"},' +
+    '"FEV_26": {"CAPBIBLIA":"Deut. 14:22-29; Núm. 18:21-32, Lev. 17 a 20; 27:30-34", "SIGLAES":"PP", "CAPES":"Cap. 50", "NOMES":"O Dízimo"},' +
+    '"FEV_27": {"CAPBIBLIA":"Levítico 25 e 26", "SIGLAES":"PP", "CAPES":"Cap. 51", "NOMES":"O Cuidado de Deus para com os  pobres"},' +
+    '"FEV_28": {"CAPBIBLIA":"Levítico 21 a 24", "SIGLAES":"PP", "CAPES":"Cap. 52", "NOMES":"As Festas Anuais"},' +
+    '"MAR_1": {"CAPBIBLIA":"Juízes 1 a 4", "SIGLAES":"PP", "CAPES":"Cap. 53", "NOMES":"Os primeiros juízes"},' +
+    '"MAR_2": {"CAPBIBLIA":"Juízes 5 a 12", "SIGLAES":"**", "CAPES":"****", "NOMES":"****"},' +
+    '"MAR_3": {"CAPBIBLIA":"Juízes 13 a 16", "SIGLAES":"PP", "CAPES":"Cap. 54", "NOMES":"Sansão"},' +
+    '"MAR_4": {"CAPBIBLIA":"Salmos 17 a 21", "SIGLAES":"**", "CAPES":"****", "NOMES":"****"},' +
+    '"MAR_5": {"CAPBIBLIA":"Rute 1 e 2 e I Samuel 1", "SIGLAES":"PP", "CAPES":"Cap. 55", "NOMES":"O Menino Samuel"},' +
+    '"MAR_6": {"CAPBIBLIA":"Rute 3 e 4 e I Samuel 2", "SIGLAES":"PP", "CAPES":"Cap. 56", "NOMES":"Eli e seus filhos"},' +
+    '"MAR_7": {"CAPBIBLIA":"I Samuel 3 a 6; I Crônicas 13 a 15", "SIGLAES":"PP", "CAPES":"Cap. 57", "NOMES":"A Arca tomada pelos filisteus"},' +
+    '"MAR_8": {"CAPBIBLIA":"I Reis 4:38-41; II Reis 2:15-18; I Samuel 7 a 9", "SIGLAES":"PP", "CAPES":"Cap. 58", "NOMES":"A Escola dos Profetas"},' +
+    '"MAR_9": {"CAPBIBLIA":"I Samuel 10 a 12", "SIGLAES":"PP", "CAPES":"Cap. 59", "NOMES":"O Primeiro Rei de Israel"},' +
+    '"MAR_10": {"CAPBIBLIA":"I Samuel 13 a 14", "SIGLAES":"PP", "CAPES":"Cap. 60", "NOMES":"A Presunção de Saul"},' +
+    '"MAR_11": {"CAPBIBLIA":"I Samuel 15", "SIGLAES":"PP", "CAPES":"Cap. 61", "NOMES":"A Rejeição de Saul"},' +
+    '"MAR_12": {"CAPBIBLIA":"I Samuel 16", "SIGLAES":"PP", "CAPES":"Cap. 62", "NOMES":"A Unção de Davi"},' +
+    '"MAR_13": {"CAPBIBLIA":"I Samuel 17 a 19", "SIGLAES":"PP", "CAPES":"Cap. 63", "NOMES":"Davi e Golias"},' +
+    '"MAR_14": {"CAPBIBLIA":"Salmos 34 e 57; I Samuel 20 a 22", "SIGLAES":"PP", "CAPES":"Cap. 64", "NOMES":"A Fuga de Davi"},' +
+    '"MAR_15": {"CAPBIBLIA":"Salmos 121 e I Samuel 23 a 26", "SIGLAES":"PP", "CAPES":"Cap. 65", "NOMES":"A Magnanimidade de Davi"},' +
+    '"MAR_16": {"CAPBIBLIA":"I Samuel 27 e 31 e I Crônicas 10", "SIGLAES":"PP", "CAPES":"Cap. 66", "NOMES":"A Morte de Saul"},' +
+    '"MAR_17": {"CAPBIBLIA":"I Samuel 28", "SIGLAES":"PP", "CAPES":"Cap. 67", "NOMES":"Feitiçaria Antiga e Moderna"},' +
+    '"MAR_18": {"CAPBIBLIA":"I Samuel 29 e 30 e II Samuel 1", "SIGLAES":"PP", "CAPES":"Cap. 68", "NOMES":"Davi em Ziclague"},' +
+    '"MAR_19": {"CAPBIBLIA":"II Samuel 2 a 5 e I Crônicas 11", "SIGLAES":"PP", "CAPES":"Cap. 69", "NOMES":"Davi chamado ao trono"},' +
+    '"MAR_20": {"CAPBIBLIA":"II Samuel 6 a 10 e I Crônicas 12, 16 e 17", "SIGLAES":"PP", "CAPES":"Cap. 70", "NOMES":"O Reinado de Davi"},' +
+    '"MAR_21": {"CAPBIBLIA":"Salmos 32 e 51, II Samuel 11 a 14", "SIGLAES":"PP", "CAPES":"Cap. 71", "NOMES":"O Pecado e Arrependimento de Davi"},' +
+    '"MAR_22": {"CAPBIBLIA":"Salmos 3, II Samuel 15 a 20", "SIGLAES":"PP", "CAPES":"Cap. 72", "NOMES":"Rebelião de Absalão"},' +
+    '"MAR_23": {"CAPBIBLIA":"Salmos 18, II Samuel 21 a 24", "SIGLAES":"PP", "CAPES":"Cap. 73", "NOMES":"Os Últimos anos de Davi"},' +
+    '"MAR_24": {"CAPBIBLIA":"I Reis 1 a 3", "SIGLAES":"**", "CAPES":"****", "NOMES":"****"},' +
+    '"MAR_25": {"CAPBIBLIA":"II Crônicas 1, I Reis 4 a 6", "SIGLAES":"PR", "CAPES":"Cap. 01", "NOMES":"Salomão"},' +
+    '"MAR_26": {"CAPBIBLIA":"II Crônicas 2, I Reis 7 e 8", "SIGLAES":"PR", "CAPES":"Cap. 02", "NOMES":"O Templo e sua Dedicação"},' +
+    '"MAR_27": {"CAPBIBLIA":"II Crônicas 3, I Reis 9 e 10", "SIGLAES":"PR", "CAPES":"Cap. 03", "NOMES":"Orgulho da Prosperidade"},' +
+    '"MAR_28": {"CAPBIBLIA":"II Crônicas 4 e 5, I Reis 11", "SIGLAES":"PR", "CAPES":"Cap. 04", "NOMES":"Resultado da Transgressão"},' +
+    '"MAR_29": {"CAPBIBLIA":"II Crônicas 6 a 9", "SIGLAES":"PR", "CAPES":"Cap. 05", "NOMES":"O Arrependimento"},' +
+    '"MAR_30": {"CAPBIBLIA":"I Reis 12 e 13", "SIGLAES":"PR", "CAPES":"Cap. 06", "NOMES":"O Reino Resgatado"},' +
+    '"MAR_31": {"CAPBIBLIA":"II Crônicas 10 e 11, I Reis 14", "SIGLAES":"PR", "CAPES":"Cap. 07", "NOMES":"Jeroboão"},' +
     '"ABR_1": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"", "NOMES":"Prefacio"},' +
     '"ABR_2": {"CAPBIBLIA":"Salmos 3 a 6 e Genesis 1", "SIGLAES":"PP", "CAPES":"Cap. 01", "NOMES":"A Criação"},' +
     '"ABR_3": {"CAPBIBLIA":"Salmos 7 a 8  e Genesis 2", "SIGLAES":"PP", "CAPES":"Cap. 02", "NOMES":"Outro"},' +
