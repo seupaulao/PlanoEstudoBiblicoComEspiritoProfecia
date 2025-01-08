@@ -48,14 +48,17 @@ ok   - esconder o backbutton
 2. aplicativo MUUUITO grande = 69.2MB
 ok 3. ficou muito feio os botoes
 ok - tem q usar width, height
-4. melhorado distanciamento, mesmo usando flexbox, visualmente ruim
-   - mais queria mais controle
-5. no detalhe é muito tosco, todos os simuladores são diferentes:
+ok 4. melhorado distanciamento, mesmo usando flexbox, visualmente ruim
+ok   - mais queria mais controle
+5. no detalhar é muito tosco, todos os simuladores são diferentes:
    - web
    - android emulado
    - android fisico
    - expo app   -   essa deve ser a escolha pra testar
-6. descobrir onde colocar a arte gerada   
+6. descobrir onde colocar a arte gerada
+   - icone
+   - imagens
+   - assets   
 
 # build
 
