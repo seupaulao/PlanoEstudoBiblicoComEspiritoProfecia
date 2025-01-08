@@ -5,10 +5,16 @@ export default function RootLayout() {
   <Stack
      screenOptions={{
       headerLeft: ()=>null,
-      headerBackVisible: false
+      headerBackVisible: false,
+      headerStyle: {backgroundColor: 'red'},
+      headerTintColor: 'white',
+      navigationBarColor: 'red',
+      statusBarBackgroundColor: 'red'
      }}
   >
-    <Stack.Screen name="index" />
+    <Stack.Screen name="index" options={{
+      title: 'Plano de Estudo Bíblico'
+    }}/>
     <Stack.Screen name="home" options={{
       title: 'Plano de Estudo Bíblico'
     }}/>

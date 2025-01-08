@@ -90,7 +90,7 @@ const voltar = () => {
               <Text style={styles.fontDescricao}>Titulo: {getTituloCapituloESPlano( getChave() )}</Text> 
           </View>
           <Pressable style={leuEP == 0 ? styles.botaoazul : styles.botaoverde} onPress={() => { gravarLeituraEP() }} ><Text style={styles.fontebotao}>{leuEP == 0 ? "Realizou a Leitura do Espírito de Profecia": "Lido!"}</Text></Pressable>
-          <Pressable style={styles.botaoazulforte} onPress={() => {voltar()}} ><Text style={styles.fontebotaobranco}>Voltar Topo</Text></Pressable>
+          <Pressable style={styles.botaoazulforte} onPress={() => {voltar()}} ><Text style={styles.fontebotaobranco}>Voltar</Text></Pressable>
         </View>
       );
 }
@@ -98,10 +98,10 @@ const voltar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 10, flexWrap: 'wrap', alignContent: 'center', flexDirection: 'row', justifyContent: 'center'
+    margin: 10,  alignContent: 'center', flexDirection: 'column', justifyContent: 'center'
   },
   fontDescricaoTitulo: {
-    textAlign: 'center' , fontSize: 24, marginBlockEnd: 20
+    textAlign: 'center' , fontSize: 24, marginBlockEnd: 20, fontWeight: 'bold'
   },
   fontDescricao: {
     textAlign: 'left' , fontSize: 18, marginBlockStart: 10
@@ -121,9 +121,8 @@ const styles = StyleSheet.create({
   botaoazul: {
     backgroundColor: '#0000cc35',
     color: '#ffffff',
-    height: 40,
-    width: 300,
-    marginTop: 30,
+    padding: 15,
+    marginTop: 50,
     justifyContent: 'center'
     
   },

@@ -26,7 +26,8 @@ const estilo = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    marginTop: 15,
+    margin: 15,
+    padding: 10
   },
   
   fonteDia: {

@@ -45,10 +45,24 @@ To learn more about developing your project with Expo, look at the following res
    - tentar queimar todos as screens empurradas pra pilha
 ok   - esconder o backbutton
 
+2. aplicativo MUUUITO grande = 69.2MB
+ok 3. ficou muito feio os botoes
+ok - tem q usar width, height
+4. melhorado distanciamento, mesmo usando flexbox, visualmente ruim
+   - mais queria mais controle
+5. no detalhe é muito tosco, todos os simuladores são diferentes:
+   - web
+   - android emulado
+   - android fisico
+   - expo app   -   essa deve ser a escolha pra testar
+6. descobrir onde colocar a arte gerada   
+
 # build
 
 ## login
 eas login
+
+caro - só posso gerar 30 builds/mes
 
 ## descobrir quem está logado
 eas whoami
