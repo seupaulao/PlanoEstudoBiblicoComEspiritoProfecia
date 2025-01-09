@@ -67,6 +67,8 @@ eas login
 
 caro - só posso gerar 30 builds/mes
 
+porém é simples e o desenvolvimento é leve, apenas uns 300MB comparado 1.1GB sem framework
+
 ## descobrir quem está logado
 eas whoami
 
@@ -102,6 +104,6 @@ eas build:run -p android --latest
 
 2 formas:
 
-- ou aguarda o `eas build` copia o apk para o dispotivo e instala
+- ou aguarda o `eas build` copia o apk para o dispositivo e instala
 
 - ou usa o [adb](https://developer.android.com/studio/command-line/adb)

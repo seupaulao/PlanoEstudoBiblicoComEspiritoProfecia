@@ -132,21 +132,21 @@ const planosstring = '{' +
     '"MAI_7": {"CAPBIBLIA":"Daniel 5", "SIGLAES":"PR", "CAPES":"Cap. 43", "NOMES":"O Vigia Invisível"},' +
     '"MAI_8": {"CAPBIBLIA":"Daniel 6", "SIGLAES":"PR", "CAPES":"Cap. 44", "NOMES":"Na Cova dos Leões"},' +
     '"MAI_9": {"CAPBIBLIA":"Esdras 1 a 3", "SIGLAES":"PR", "CAPES":"Cap. 45", "NOMES":"A Volta do Exílio"},' +
-    '"MAI_10": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 46", "NOMES":"Prefacio"},' +
-    '"MAI_11": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 47", "NOMES":"Prefacio"},' +
-    '"MAI_12": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 48", "NOMES":"Prefacio"},' +
-    '"MAI_13": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 49", "NOMES":"Prefacio"},' +
-    '"MAI_14": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 50", "NOMES":"Prefacio"},' +
-    '"MAI_15": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 51", "NOMES":"Prefacio"},' +
-    '"MAI_16": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 52", "NOMES":"Prefacio"},' +
-    '"MAI_17": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 53", "NOMES":"Prefacio"},' +
-    '"MAI_18": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 54", "NOMES":"Prefacio"},' +
-    '"MAI_19": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 55", "NOMES":"Prefacio"},' +
-    '"MAI_20": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PR", "CAPES":"Cap. 56", "NOMES":"Prefacio"},' +
-    '"MAI_21": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 57", "NOMES":"Prefacio"},' +
-    '"MAI_22": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 58", "NOMES":"Prefacio"},' +
-    '"MAI_23": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 59", "NOMES":"Prefacio"},' +
-    '"MAI_24": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 60", "NOMES":"Prefacio"},' +
+    '"MAI_10": {"CAPBIBLIA":"Ageu 1 e 2", "SIGLAES":"PR", "CAPES":"Cap. 46", "NOMES":"Os Profetas de Deus o ajudavam"},' +
+    '"MAI_11": {"CAPBIBLIA":"Zacarias 1 a 4", "SIGLAES":"PR", "CAPES":"Cap. 47", "NOMES":"Josué e o Anjo"},' +
+    '"MAI_12": {"CAPBIBLIA":"Zacarias 5 a 9", "SIGLAES":"PR", "CAPES":"Cap. 48", "NOMES":"Nem por Força e Nem por Violência"},' +
+    '"MAI_13": {"CAPBIBLIA":"Ester 1 a 3", "SIGLAES":"PR", "CAPES":"Cap. 49", "NOMES":"Nos dias da Rainha Ester"},' +
+    '"MAI_14": {"CAPBIBLIA":"Esdras 4 a 6", "SIGLAES":"PR", "CAPES":"Cap. 50", "NOMES":"Esdras, o Sacerdote e Escriba"},' +
+    '"MAI_15": {"CAPBIBLIA":"Esdras 7 a 10", "SIGLAES":"PR", "CAPES":"Cap. 51", "NOMES":"Um Reavivamento Espiritual"},' +
+    '"MAI_16": {"CAPBIBLIA":"Neemias 1 e 2", "SIGLAES":"PR", "CAPES":"Cap. 52", "NOMES":"Um Homem Oportuno"},' +
+    '"MAI_17": {"CAPBIBLIA":"Ester 4, Neemias 3 e 4", "SIGLAES":"PR", "CAPES":"Cap. 53", "NOMES":"Os Reconstrutores do Muro"},' +
+    '"MAI_18": {"CAPBIBLIA":"Ester 5 a 7, Neemias 5", "SIGLAES":"PR", "CAPES":"Cap. 54", "NOMES":"Condenadas a Extorção"},' +
+    '"MAI_19": {"CAPBIBLIA":"Ester 8 a 10, Neemias 6", "SIGLAES":"PR", "CAPES":"Cap. 55", "NOMES":"Ciladas dos Pagãos"},' +
+    '"MAI_20": {"CAPBIBLIA":"Neemias 7 a 10", "SIGLAES":"PR", "CAPES":"Cap. 56", "NOMES":"Instruídos na Lei de Deus"},' +
+    '"MAI_21": {"CAPBIBLIA":"Neemias 11 a 13", "SIGLAES":"PP", "CAPES":"Cap. 57", "NOMES":"Reforma"},' +
+    '"MAI_22": {"CAPBIBLIA":"Zacarias 10 a 14", "SIGLAES":"PP", "CAPES":"Cap. 58", "NOMES":"A Vinda de um Libertador"},' +
+    '"MAI_23": {"CAPBIBLIA":"Malaquias 1 a 4", "SIGLAES":"PP", "CAPES":"Cap. 59", "NOMES":"A Casa de Israel"},' +
+    '"MAI_24": {"CAPBIBLIA":"Isaías 63 a 66", "SIGLAES":"PP", "CAPES":"Cap. 60", "NOMES":"Visões da Glõria Futura"},' +
     '"MAI_25": {"CAPBIBLIA":"Marcos 1 a 3", "SIGLAES":"DTN", "CAPES":"****", "NOMES":"****"},' +
     '"MAI_26": {"CAPBIBLIA":"Isaías 12 e 13, Mateus 1", "SIGLAES":"DTN", "CAPES":"Cap. 01", "NOMES":"Deus Conosco"},' +
     '"MAI_27": {"CAPBIBLIA":"Isaías 14 a 16", "SIGLAES":"DTN", "CAPES":"Cap. 02", "NOMES":"O Povo Escolhido"},' +
@@ -154,36 +154,36 @@ const planosstring = '{' +
     '"MAI_29": {"CAPBIBLIA":"Isaías 20 a 22, Lucas 2:1-20", "SIGLAES":"DTN", "CAPES":"Cap. 04", "NOMES":"Vos Nasceu Hoje o Salvador"},' +
     '"MAI_30": {"CAPBIBLIA":"Isaías 23 a 25, Lucas 2:21-38", "SIGLAES":"DTN", "CAPES":"Cap. 05", "NOMES":"A Dedicação"},' +
     '"MAI_31": {"CAPBIBLIA":"Isaías 26 a 28, Mateus 2", "SIGLAES":"DTN", "CAPES":"Cap. 06", "NOMES":"Vimos a Sua Estrela"},' +
-    '"JUN_1": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"", "NOMES":"Prefacio"},' +
-    '"JUN_2": {"CAPBIBLIA":"Salmos 3 a 6 e Genesis 1", "SIGLAES":"PP", "CAPES":"Cap. 01", "NOMES":"A Criação"},' +
-    '"JUN_3": {"CAPBIBLIA":"Salmos 7 a 8  e Genesis 2", "SIGLAES":"PP", "CAPES":"Cap. 02", "NOMES":"Outro"},' +
-    '"JUN_4": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 03", "NOMES":"Prefacio"},' +
-    '"JUN_5": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 04", "NOMES":"Prefacio"},' +
-    '"JUN_6": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 05", "NOMES":"Prefacio"},' +
-    '"JUN_7": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 06", "NOMES":"Prefacio"},' +
-    '"JUN_8": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 07", "NOMES":"Prefacio"},' +
-    '"JUN_9": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 08", "NOMES":"Prefacio"},' +
-    '"JUN_10": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 09", "NOMES":"Prefacio"},' +
-    '"JUN_11": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 10", "NOMES":"Prefacio"},' +
-    '"JUN_12": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 11", "NOMES":"Prefacio"},' +
-    '"JUN_13": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 12", "NOMES":"Prefacio"},' +
-    '"JUN_14": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 13", "NOMES":"Prefacio"},' +
-    '"JUN_15": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 14", "NOMES":"Prefacio"},' +
-    '"JUN_16": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 15", "NOMES":"Prefacio"},' +
-    '"JUN_17": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 16", "NOMES":"Prefacio"},' +
-    '"JUN_18": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 17", "NOMES":"Prefacio"},' +
-    '"JUN_19": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 18", "NOMES":"Prefacio"},' +
-    '"JUN_20": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 19", "NOMES":"Prefacio"},' +
-    '"JUN_21": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 20", "NOMES":"Prefacio"},' +
-    '"JUN_22": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 21", "NOMES":"Prefacio"},' +
-    '"JUN_23": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 22", "NOMES":"Prefacio"},' +
-    '"JUN_24": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 23", "NOMES":"Prefacio"},' +
-    '"JUN_25": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 24", "NOMES":"Prefacio"},' +
-    '"JUN_26": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 25", "NOMES":"Prefacio"},' +
-    '"JUN_27": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 26", "NOMES":"Prefacio"},' +
-    '"JUN_28": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 27", "NOMES":"Prefacio"},' +
-    '"JUN_29": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 28", "NOMES":"Prefacio"},' +
-    '"JUN_30": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"Cap. 29", "NOMES":"Prefacio"},' +
+    '"JUN_1": {"CAPBIBLIA":"Isaías 29 e 30, Lucas 2:39-40", "SIGLAES":"DTN", "CAPES":"Cap. 07", "NOMES":"Em Criança"},' +
+    '"JUN_2": {"CAPBIBLIA":"Isaías 31 a 33, Lucas 2:41-52", "SIGLAES":"DTN", "CAPES":"Cap. 08", "NOMES":"A Visita Pascoal"},' +
+    '"JUN_3": {"CAPBIBLIA":"Isaías 34 a 36", "SIGLAES":"DTN", "CAPES":"Cap. 09", "NOMES":"Dias de Luta"},' +
+    '"JUN_4": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 10", "NOMES":"A Voz do Deserto"},' +
+    '"JUN_5": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 11", "NOMES":"O Batismo"},' +
+    '"JUN_6": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 12", "NOMES":"A Tentação"},' +
+    '"JUN_7": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 13", "NOMES":"A Vitória"},' +
+    '"JUN_8": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 14", "NOMES":"Achamos o Messias"},' +
+    '"JUN_9": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 15", "NOMES":"Nas Bodas"},' +
+    '"JUN_10": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 16", "NOMES":"Em Seu Templo"},' +
+    '"JUN_11": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 17", "NOMES":"Nicodemos"},' +
+    '"JUN_12": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 18", "NOMES":"É necessário que Ele Cresça"},' +
+    '"JUN_13": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 19", "NOMES":"Junto ao poço de Jacó"},' +
+    '"JUN_14": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 20", "NOMES":"Se não virdes Sinais e Milagres"},' +
+    '"JUN_15": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 21", "NOMES":"Betesda e o Sinédrio"},' +
+    '"JUN_16": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 22", "NOMES":"Prisão e Morte de João Batista"},' +
+    '"JUN_17": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 23", "NOMES":"O reino dos Céus está Próximo"},' +
+    '"JUN_18": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 24", "NOMES":"Não é este o Filho do Carpinteiro?"},' +
+    '"JUN_19": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 25", "NOMES":"O Chamado a Beira do Mar"},' +
+    '"JUN_20": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 26", "NOMES":"Em Cafarnaum"},' +
+    '"JUN_21": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 27", "NOMES":"Podes tornar-me limpo"},' +
+    '"JUN_22": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 28", "NOMES":"Levi Mateus"},' +
+    '"JUN_23": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 29", "NOMES":"O Sábado"},' +
+    '"JUN_24": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 30", "NOMES":"Nomeou Doze"},' +
+    '"JUN_25": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 31", "NOMES":"O Sermão da Montanha"},' +
+    '"JUN_26": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 32", "NOMES":"O Centurião"},' +
+    '"JUN_27": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 33", "NOMES":"Quem são os Meus Irmãos?"},' +
+    '"JUN_28": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 34", "NOMES":"O Convite"},' +
+    '"JUN_29": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"DTN", "CAPES":"Cap. 35", "NOMES":"Cala-te, Aquieta-te"},' +
+    '"JUN_30": {"CAPBIBLIA":"Jeremias 39 a 41, Lucas 8:40-56", "SIGLAES":"DTN", "CAPES":"Cap. 36", "NOMES":"O Toque da Fé"},' +
     '"JUL_1": {"CAPBIBLIA":"Salmos 1 a 2", "SIGLAES":"PP", "CAPES":"", "NOMES":"Prefacio"},' +
     '"JUL_2": {"CAPBIBLIA":"Salmos 3 a 6 e Genesis 1", "SIGLAES":"PP", "CAPES":"Cap. 01", "NOMES":"A Criação"},' +
     '"JUL_3": {"CAPBIBLIA":"Salmos 7 a 8  e Genesis 2", "SIGLAES":"PP", "CAPES":"Cap. 02", "NOMES":"Outro"},' +
